@@ -27,7 +27,7 @@
 ![image](https://github.com/NTDtrytofullstack/bof7/assets/130078745/a1b253e0-6d8d-4553-9767-14ce4a031a0d)
 ![image](https://github.com/NTDtrytofullstack/bof7/assets/130078745/410fe938-163f-4b38-8f10-76873a31514c)
 ![image](https://github.com/NTDtrytofullstack/bof7/assets/130078745/7b4e22e7-50bc-4eb9-a040-a00336ecd763)
--Trước khi đó ta cần nhập hàm puts và đại chỉ đc leak ra down về file libc , patched chúng lại , load lên tools file libc để có thể sử dụng địa chỉ có nó , kết nối với sever để có thể nhập đúng địa chỉ libc in ra đc shell.
+-Trước khi đó ta cần nhập hàm puts và địa chỉ đc leak ra down về file libc , patched chúng lại , load lên tools file libc để có thể sử dụng địa chỉ có nó , kết nối với sever để có thể nhập đúng địa chỉ libc in ra đc shell ( cái khó ở đây là phải check từng file :(  ) .
 ![image](https://github.com/NTDtrytofullstack/bof7/assets/130078745/cce40c8b-30dd-43a6-82c8-abf08780ac76)
 ![image](https://github.com/NTDtrytofullstack/bof7/assets/130078745/d606fce9-adbe-4ca3-90b3-22f8418adedb)
 - Sau khi check lại ta cần trừ bớt đi 1 lượng bằng với địa chỉ của hàm **puts** ta viết như sau.
